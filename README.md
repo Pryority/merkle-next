@@ -1,22 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), [`wagmi`](https://wagmi.sh/) [`Tailwindcss`](https://tailwindcss.com/docs/guides/nextjs) with the goal of making the setup of a Web App connecte to Ethereum faster.
 
-## Getting Started
+## nemiwind
 
-First, run the development server:
+> Install this starter kit to get building dapp frontends even faster 💨
 
-```bash
-npm run dev
-# or
-yarn dev
+![Demo 1](./nemiwind-demo.png)
+
+---
+
+## Quickstart
+
+1. Install the *nemiwind* package...
+
+```
+npx @pryority/nemiwind <YOUR_APP_NAME or . for currenty directory name>
+```
+- or clone the *GitHub repo* in a fresh directory
+```
+git clone https://github.com/pryority/nemiwind.git
+cd nemiwind
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install the package dependencies into your local repo
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+yarn install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Run the Next.js web in the browser
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+yarn start
+```
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+- You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
 ## Learn More
 
@@ -24,11 +42,11 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Learn WAGMI](https://wagmi.sh/) - the wagmi documentation.
+- [Learn Tailwind](https://tailwindcss.com/docs/guides/nextjs) - the Tailwind installation process for Next.js.
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your Nemiwind app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
