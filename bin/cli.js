@@ -20,17 +20,17 @@ console.log(`Cloning the repository with name ${repoName}`);
 const checkedOut = runCommand(gitCheckoutCommand);
 if (!checkedOut) process.exit(-1);
 
-console.log(`%c💾 Installing dependencies for ${repoName}, your nemiwind app`, "background: #222; color: #11f2a0");
+console.log(`💾 Installing dependencies for ${repoName}, your nemiwind app`);
 const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
 
 console.log("Congratulations! You are ready to use \n");
-console.log(`%c
-\n                             _            _             __
-\n    ____   ___   ____ ___   (_)_      __ (_)____   ____/ /
-\n    / __ \ / _ \ / __ __ \ / /| | /| / // // __ \ / __  / 
-\n / / / //  __// / / / / // / | |/ |/ // // / / // /_/ /  
-\n /_/ /_/ \___//_/ /_/ /_//_/  |__/|__//_//_/ /_/ \__,_/                         
-\n\n`, "color: #bada55");
+console.log(`
+\n                            _            _             __
+     ____   ___   ____ ___   (_)_      __ (_)____   ____/ /
+    / __ \ / _ \ / __ __ \ / /| | /| / // // __ \ / __  / 
+  / / / //  __// / / / / // / | |/ |/ // // / / // /_/ /  
+ /_/ /_/ \___//_/ /_/ /_//_/  |__/|__//_//_/ /_/ \__,_/                         
+\n\n`);
 console.log("Follow the next commands to start using the platform.");
 console.log(`cd ${repoName} && yarn dev`);
