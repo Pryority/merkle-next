@@ -8,6 +8,6 @@ const nextConfig = {
       // Enter the domain of each photo as a string to resolve errors
     ]
   }
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
