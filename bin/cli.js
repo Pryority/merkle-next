@@ -20,9 +20,17 @@ console.log(`Cloning the repository with name ${repoName}`);
 const checkedOut = runCommand(gitCheckoutCommand);
 if (!checkedOut) process.exit(-1);
 
-console.log(`💾 Installing dependencies for ${repoName}, your nemiwind app`);
+console.log(`%c💾 Installing dependencies for ${repoName}, your nemiwind app`, "background: #222; color: #11f2a0");
 const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
 
-console.log("Congratulations! You are ready to use  N E M I W I N D. Follow the next commands to start using the platform.");
-console.log(`cd ${repoName} && npm start`);
+console.log("Congratulations! You are ready to use \n\n");
+console.log(`%c\n
+\n                           _            _             __
+\n  ____   ___   ____ ___   (_)_      __ (_)____   ____/ /
+  / __ \ / _ \ / __ __ \ / /| | /| / // // __ \ / __  / 
+ / / / //  __// / / / / // / | |/ |/ // // / / // /_/ /  
+/_/ /_/ \___//_/ /_/ /_//_/  |__/|__//_//_/ /_/ \__,_/                         
+\n\n`, "color: #bada55");
+console.log("Follow the next commands to start using the platform.");
+console.log(`cd ${repoName} && yarn dev`);
