@@ -18,13 +18,13 @@ npx @pryority/nemiwind <YOUR_APP_NAME or . for currenty directory name>
 - or clone the *GitHub repo* in a fresh directory
 ```
 git clone https://github.com/pryority/nemiwind.git
-cd nemiwind
+cd nemiwind && yarn install
 ```
 
 2. Install the package dependencies into your local repo
 
 ```
-yarn install
+yarn dev
 ```
 
 3. Run the Next.js web in the browser
