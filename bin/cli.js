@@ -14,13 +14,13 @@ const runCommand = (command) => {
 
 const repoName = process.argv[2];
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/pryority/nemiwind ${repoName}`;
-const installDepsCommand = `cd ${repoName} && npm install`;
+const installDepsCommand = `cd ${repoName} && yarn install`;
 
 console.log(`Cloning the repository with name ${repoName}`);
 const checkedOut = runCommand(gitCheckoutCommand);
 if (!checkedOut) process.exit(-1);
 
-console.log(`Installing dependencies for ${repoName}`);
+console.log(`💾 Installing dependencies for ${repoName}, your nemiwind app`);
 const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
 
