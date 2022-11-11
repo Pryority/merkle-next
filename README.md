@@ -13,7 +13,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 1. Install the *nemiwind* package...
 
 ```
-npx @pryority/nemiwind <YOUR_APP_NAME or . for currenty directory name>
+npx @pryority/nemiwind@latest <YOUR_APP_NAME or . for currenty directory name>
 ```
 - or clone the *GitHub repo* in a fresh directory
 ```
