@@ -15,7 +15,7 @@ import { alchemyProvider } from "wagmi/providers/alchemy";
 import { publicProvider } from "wagmi/providers/public";
 
 import type { AppProps } from "next/app";
-import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 
 const { chains, provider } = configureChains(
@@ -46,11 +46,10 @@ export default function App({ Component, pageProps }: AppProps) {
           accentColor: "#0f3a85"
         })}  
       >
-        <div className="justify-center flex flex-col w-full items-center bg-gradient-to-bl from-stone-700 via-blue-900 to-slate-600 no-scroll">
-          <div className="justify-center min-h-screen flex flex-col w-5/6 items-center">
-            {/* <Header /> */}
+        <div className="justify-center py-8 flex flex-col w-full items-center bg-gradient-to-bl from-slate-50 via-slate-50 to-stone-50 dark:from-slate-900 dark:via-slate-900 dark:to-stone-800">
+          <div className="justify-center min-h-screen flex flex-col sm:w-5/6 lg:max-w-3xl items-center">
+            <Header />
             <Component {...pageProps} />
-            <Footer />
           </div>
         </div>
       </RainbowKitProvider>

@@ -3,13 +3,7 @@ import Image from "next/image";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 // import { Faucet } from "~~/components/scaffold-eth";
 
-// todo: move this later scaffold config.  See TAutoConnect for comments on each prop
-
-/**
- * Site header
- */
-export default function Footer() {
-
+export default function Header() {
   return (
     <footer className="flex flex-col md:py-8 pb-8 items-center w-full">
       <div className="flex flex-row items-center justify-around w-full">
