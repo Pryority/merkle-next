@@ -24,6 +24,6 @@ console.log(`💾 Installing dependencies for ${repoName}, your nemiwind app`);
 const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
 
-console.log("Congratulations! You are ready to use \n\n 🌪   n e m i w i n d   🌪 \n\n");
-console.log("Follow the next commands to start using the platform.");
+console.log("Congratulations! You are ready to use:  n e m i w i n d 🌪 \n\n");
+console.log("Follow the next commands to start using the platform:");
 console.log(`cd ${repoName} && yarn dev`);
