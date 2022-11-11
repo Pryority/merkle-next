@@ -1,6 +1,6 @@
 {
   "name": "@pryority/nemiwind",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "bin": "./bin/cli.js",
   "scripts": {
     "dev": "next dev",
