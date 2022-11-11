@@ -1,3 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .dependency-section {
+    @apply cursor-pointer text-purple-800 hover:text-purple-600 dark:text-purple-50 dark:hover:text-purple-200 hover:drop-shadow-lg transition-all ease-in-out duration-500;
+  }
+  .connect-btn {
+    @apply bg-green-500 text-green-900 hover:text-slate-50 p-2 rounded-xl border border-green-600 hover:bg-green-700 transition-all ease-in-out duration-150;
+  }
+  .disconnect-btn {
+    @apply bg-red-500 text-red-900 hover:text-slate-50 p-2 rounded-xl border border-red-600 hover:bg-red-700 transition-all ease-in-out duration-150;
+  }
+}
+
 html,
 body {
   padding: 0;
