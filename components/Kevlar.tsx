@@ -25,10 +25,10 @@ const Kevlar = (props: Props) => {
       <section className="flex flex-col items-start space-y-2 w-full">
         <h2 className="text-xl">Install Kevlar</h2>
         {showHelp ? (
-          <div className="flex flex-col items-start space-y-8 text-base sm:text-md md:text-lg w-full max-w-5xl rounded-md bg-stone-300/20 p-4">
+          <div className="flex flex-col items-start space-y-8 text-base sm:text-md md:text-lg w-full max-w-5xl rounded-md bgsn p-4">
             <div className="flex flex-col space-y-4 items-start">
               <div className="flex w-full items-center justify-between">
-                <div className="flex items-center space-x-2 text-slate-600 hover:text-teal-600 t-1 relative">
+                <div className="flex items-center sn hover:text-teal-600">
                   <button onClick={toggleShowHelp}>What is Kevlar?</button>
                 </div>
                 <XCircleIcon
@@ -36,16 +36,16 @@ const Kevlar = (props: Props) => {
                   onClick={toggleShowHelp}
                 />
               </div>
-              <p className="text-start text-slate-700 font-light">
+              <p className="text-start pr font-light">
                 Kevlar is a light client-based RPC Proxy for PoS Ethereum that makes your Blockchain Wallet (RPC-based) completely trustless!
               </p>
-              <p className="text-start text-slate-700 font-light">
+              <p className="text-start pr font-light">
                 When Kevlar starts, it syncs to the latest header of the <Link href={"https://beaconcha.in/"} className={"text-pink-600 hover:text-orange-500 t-2"}>Beacon Chain</Link> and then starts an RPC server. This local RPC server can be added to MetaMask or any other RPC-based wallet.
               </p>
-              <p className="text-start text-slate-700 font-light">
+              <p className="text-start pr font-light">
                 Every RPC call the connected wallet makes is verified using Merkle Inclusion proofs to the latest block header.
               </p>
-              <p className="text-start text-slate-700 font-light">
+              <p className="text-start pr font-light">
                 Currently Kevlar supports two kinds of sync methods: the <span className="font-normal">Light Sync</span> based on the light client sync protocol specified by the Ethereum Specification and the <span className="font-normal">Optimistic Sync</span> (which is 100x faster than Light Sync) based on construction from the research paper <Link href={"https://arxiv.org/abs/2209.08673"} target="_blank" className="t-1 text-blue-400 hover:text-blue-600">Proofs of Proof of Stake in Sublinear Complexity</Link>.
               </p>
               <div className="flex w-full items-center justify-center">
@@ -73,11 +73,11 @@ const Kevlar = (props: Props) => {
         )}
       </section>
       <div className="flex w-full justify-between items-center space-x-4">
-        <div className="flex w-full h-[1px] bg-zinc-300" />
+        <div className="flex w-full h-[1px] bg-zinc-300 dark:bg-zinc-700" />
         <MinusCircleIcon
           className={
             showKevlar
-              ? "h-5 w-5 text-zinc-300 t-1 hover:fill-zinc-800 cursor-pointer hover:text-zinc-200"
+              ? "h-5 w-5 text-zinc-300 hover:text-zinc-200 dark:text-zinc-700 dark:hover-zinc-600 t-1 hover:fill-zinc-800 cursor-pointer "
               : "hidden"
           }
           onClick={toggleShowKevlar}
@@ -85,7 +85,7 @@ const Kevlar = (props: Props) => {
         <PlusCircleIcon
           className={
             !showKevlar
-              ? "h-5 w-5 text-zinc-300 t-1 hover:fill-zinc-800 cursor-pointer hover:text-zinc-200"
+              ? "h-5 w-5 text-zinc-300 hover:text-zinc-200 dark:text-zinc-700 dark:hover-zinc-600 t-1 hover:fill-zinc-800 cursor-pointer "
               : "hidden"
           }
           onClick={toggleShowKevlar}
@@ -100,9 +100,9 @@ const Kevlar = (props: Props) => {
         }
       >
         <section className="flex flex-col w-full items-center space-y-2">
-          <div className="flex flex-col w-full space-y-4 bg-zinc-100/50 border dark:bg-slate-900/30 p-4 rounded-md">
+          <div className="flex flex-col w-full space-y-4 bgpr p-4 rounded-md">
             <div className="flex items-center w-full justify-between">
-              <h3 className="text-lg w-full text-sky-900 font-bold">
+              <h3 className="text-lg w-full text-sky-900 dark:text-teal-700 font-bold">
                 npm
               </h3>
               <div className={`${"flex w-full items-center justify-end"}`}>

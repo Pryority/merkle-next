@@ -32,7 +32,7 @@ const Foundry = (props: Props) => {
           <div className="flex flex-col items-start space-y-8 text-base sm:text-md md:text-lg w-full max-w-5xl rounded-md bg-stone-300/20 p-4">
             <div className="flex flex-col space-y-4 items-start">
               <div className="flex w-full items-center justify-between">
-                <div className="flex items-center space-x-2 text-slate-600 hover:text-amber-600 t-1 relative">
+                <div className="flex items-center sn hover:text-amber-600">
                   <button onClick={toggleShowHelp}>What is Foundry?</button>
                 </div>
                 <XCircleIcon
@@ -40,9 +40,9 @@ const Foundry = (props: Props) => {
                   onClick={toggleShowHelp}
                 />
               </div>
-              <p className="text-start font-light text-slate-700">
+              <p className="text-start font-light pr">
                 Foundry is a blazing fast, portable and modular smart contract development toolchain for
-                Ethereum applications, written in <Link href={"https://www.rust-lang.org/learn/get-started"} className={"text-slate-600 hover:text-slate-900 t-1"}>Rust</Link>.
+                Ethereum applications, written in <Link href={"https://www.rust-lang.org/learn/get-started"} className={"text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-600 t-1"}>Rust</Link>.
               </p>
 
               <div className="flex w-full items-center justify-center">
@@ -69,11 +69,11 @@ const Foundry = (props: Props) => {
         )}
       </section>
       <div className="flex w-full justify-between items-center space-x-4">
-        <div className="flex w-full h-[1px] bg-zinc-300" />
+        <div className="flex w-full h-[1px] bg-zinc-300 dark:bg-zinc-700" />
         <MinusCircleIcon
           className={
             showFoundry
-              ? "h-5 w-5 text-zinc-300 t-1 hover:fill-zinc-800 cursor-pointer hover:text-zinc-200"
+              ? "h-5 w-5 text-zinc-300 hover:text-zinc-200 dark:text-zinc-700 dark:hover-zinc-600 t-1 hover:fill-zinc-800 cursor-pointer"
               : "hidden"
           }
           onClick={toggleShowFoundry}
@@ -81,7 +81,7 @@ const Foundry = (props: Props) => {
         <PlusCircleIcon
           className={
             !showFoundry
-              ? "h-5 w-5 text-zinc-300 t-1 hover:fill-zinc-800 cursor-pointer hover:text-zinc-200"
+              ? "h-5 w-5 text-zinc-300 hover:text-zinc-200 dark:text-zinc-700 dark:hover-zinc-600 t-1 hover:fill-zinc-800 cursor-pointer"
               : "hidden"
           }
           onClick={toggleShowFoundry}
@@ -96,9 +96,9 @@ const Foundry = (props: Props) => {
       >
         {/* LINUX MAC */}
         <section className="flex flex-col w-full items-center space-y-2">
-          <div className="flex flex-col w-full space-y-4 bg-zinc-100/50 border dark:bg-slate-900/30 p-4 rounded-md">
+          <div className="flex flex-col w-full space-y-4 bgpr p-4 rounded-md">
             <div className="flex items-center w-full justify-between">
-              <h3 className="text-lg w-full text-sky-900 font-bold">
+              <h3 className="text-lg w-full text-sky-900 dark:text-teal-700 font-bold">
                 Linux and macOS
               </h3>
               <div className={`${"flex w-full items-center justify-end"}`}>
@@ -142,9 +142,9 @@ const Foundry = (props: Props) => {
         </section>
         {/* WINDOWS */}
         <section className="flex flex-col items-center space-y-2">
-          <div className="flex flex-col w-full space-y-4 bg-zinc-100/50 border dark:bg-slate-900/30 p-4 rounded-md">
+          <div className="flex flex-col w-full space-y-4 bgpr p-4 rounded-md">
             <div className="flex items-center w-full justify-between">
-              <h3 className="text-lg w-full text-sky-900 font-bold">Windows</h3>
+              <h3 className="text-lg w-full text-sky-900 dark:text-teal-700 font-bold">Windows</h3>
               <div className={`${"flex w-full items-center justify-end"}`}>
                 {!showWindows ? (
                   <PlusCircleIcon
