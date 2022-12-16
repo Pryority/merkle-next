@@ -13,7 +13,7 @@ import Kevlar from "../components/Kevlar";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen w-full items-center justify-start p-8">
+    <>
       <Head>
         <title>Layer-1</title>
         <meta name="description" content="Ethereum" />
@@ -21,7 +21,6 @@ export default function Home() {
       </Head>
 
       <main className={"flex flex-col space-y-8 items-center max-w-lg w-full"}>
-        <Header />
         <Kevlar />
         <Foundry />
         {/* INSTALLED */}
@@ -47,12 +46,12 @@ export default function Home() {
                 </Link>
               </div>
               <div className="flex w-full justify-center p-2 uppercase tracking-wider font-bold">
-                <Link href={""} className={"hover:text-yellow-500 t-2"}>
+                <Link href={"/cast"} className={"hover:text-yellow-500 t-2"}>
                   cast
                 </Link>
               </div>
               <div className="flex w-full justify-center p-2 uppercase tracking-wider font-bold">
-                <Link href={""} className={"hover:text-yellow-500 t-2"}>
+                <Link href={"/anvil"} className={"hover:text-yellow-500 t-2"}>
                   anvil
                 </Link>
               </div>
@@ -60,6 +59,6 @@ export default function Home() {
           </div>
         </article>
       </main>
-    </div>
+    </>
   );
 }

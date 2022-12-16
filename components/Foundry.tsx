@@ -123,9 +123,9 @@ const Foundry = (props: Props) => {
                 foundryup:
               </p>
               <div className="copy">
-                <p className="text-lg">
+                <code className="text-md">
                   curl -L https://foundry.paradigm.xyz | bash
-                </p>
+                </code>
                 <DocumentDuplicateIcon className="h-6 w-6 t-75 hover:text-orange-400 cursor-pointer" />
               </div>
               <div className="pt-4 flex flex-col">
@@ -133,7 +133,7 @@ const Foundry = (props: Props) => {
                   Next, install Foundry by running:
                 </p>
                 <div className="copy">
-                  <p className="text-lg">foundryup</p>
+                  <code className="text-md">foundryup</code>
                   <DocumentDuplicateIcon className="h-6 w-6 t-75 hover:text-orange-400 cursor-pointer" />
                 </div>
               </div>
@@ -210,9 +210,9 @@ const Foundry = (props: Props) => {
                 After this, run the following to build Foundry from source:
               </p>
               <div className="copy">
-                <p className="text-lg">
+                <code className="text-md">
                   cargo install --git https://github.com/foundry-rs/foundry foundry-cli anvil --bins --locked
-                </p>
+                </code>
                 <DocumentDuplicateIcon className="h-6 w-6 t-75 hover:text-orange-400 cursor-pointer" />
               </div>
               <div className="pt-4 flex flex-col">
@@ -220,7 +220,7 @@ const Foundry = (props: Props) => {
                   This will download foundryup. Then install Foundry by running:
                 </p>
                 <div className="copy">
-                  <p className="text-lg">foundryup</p>
+                  <code className="text-md">foundryup</code>
                   <DocumentDuplicateIcon className="h-6 w-6 t-75 hover:text-orange-400 cursor-pointer" />
                 </div>
               </div>

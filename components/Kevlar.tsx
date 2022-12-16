@@ -126,9 +126,9 @@ const Kevlar = (props: Props) => {
                 First, install Kevlar as a global package
               </p>
               <div className="copy">
-                <p className="text-lg">
+                <code className="text-lg">
                   npm i -g @lightclients/kevlar
-                </p>
+                </code>
                 <DocumentDuplicateIcon className="h-6 w-6 t-75 hover:text-orange-400 cursor-pointer" />
               </div>
               <div className="pt-4 flex flex-col">
@@ -136,7 +136,7 @@ const Kevlar = (props: Props) => {
                   Next, start the private light client server by running:
                 </p>
                 <div className="copy">
-                  <p className="text-lg">kevlar</p>
+                  <code className="text-lg">kevlar</code>
                   <DocumentDuplicateIcon className="h-6 w-6 t-75 hover:text-orange-400 cursor-pointer" />
                 </div>
               </div>
