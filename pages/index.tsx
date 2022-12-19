@@ -244,7 +244,7 @@ export default function Home() {
       <div className="snap-start w-screen min-h-screen flex items-center justify-center">
         <motion.section 
           id="question" 
-          initial={{ opacity: 0, y: -300 }}
+          initial={{ opacity: 0, y: 300 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
@@ -390,7 +390,7 @@ export default function Home() {
                 <div className="flex space-x-4 w-full items-center">
                   <div className="pt-2 pb-4 flex w-full justify-center">
                     <Link 
-                      href="https://dankradfeist.de/ethereum/2021/02/14/why-stateless.html" 
+                      href="https://snakecharmers.ethereum.org/the-winding-road-to-functional-light-clients/" 
                       target={"_blank"}
                       className="flex space-x-2 items-center rounded-lg bg-teal-100 border border-teal-400 visited:text-teal-900 visited:hover:text-teal-900/60 text-teal-700 hover:text-sky-900 focus:bg-teal-600 py-[0.34px] px-4 font-base text-xs t-1 hover:bg-sky-200 hover:border-sky-400"
                     >
@@ -402,12 +402,12 @@ export default function Home() {
                   </div>
                   <div className="pt-2 pb-4 flex w-full justify-center">
                     <Link 
-                      href="https://dankradfeist.de/ethereum/2021/02/14/why-stateless.html" 
+                      href="https://www.youtube.com/watch?v=MZxqRs_tLNs" 
                       target={"_blank"}
                       className="flex space-x-2 items-center rounded-lg bg-teal-100 border border-teal-400 visited:text-teal-900 visited:hover:text-teal-900/60 text-teal-700 hover:text-sky-900 focus:bg-teal-600 py-[0.34px] px-4 font-base text-xs t-1 hover:bg-sky-200 hover:border-sky-400"
                     >
                       <p className="leading-7 w-full dark:text-sky-100">
-                        {"Democratizing Ethereum"}
+                        {"Democratizing Ethereum: Breaking Down the Monolith"}
                       </p>
                       <ArrowTopRightOnSquareIcon className="h-3 w-3"/>
                     </Link>
