@@ -63,7 +63,7 @@ export default function Home() {
           transition={{ duration: .5 }}
           className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex items-center justify-center">
           <h2 className="text-lg sm:text-4xl md:text-7xl text-start">
-            {"Systems must be established and adopted that aim to support a special type of Node, called a..."}
+            {"Systems must be established and adopted that aim to support a special type of client, called a..."}
           </h2>
         </motion.section>
       </div>
@@ -87,7 +87,7 @@ export default function Home() {
           transition={{ duration: .5  }}
           className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex w-full items-center justify-center">
           <h2 className="text-lg sm:text-4xl md:text-7xl text-end">
-            {"Eventually, light clients AKA \"light nodes\" will run on mobile phones or embedded devices (IoT)."}
+            {"Eventually, light clients will run on mobile phones or embedded devices (IoT) and accept data from light nodes."}
           </h2>
         </motion.section>
       </div>
@@ -126,7 +126,7 @@ export default function Home() {
           transition={{ duration: .5 }}
           className="p-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col space-y-8 w-full items-center justify-center">
           <h2 className="text-lg sm:text-4xl md:text-7xl text-start">
-            The light node can independently verify the data they receive against the state roots in the block headers.
+            A light node can independently verify the data they receive against the state roots in the block headers.
           </h2>
         </motion.section>
       </div>
