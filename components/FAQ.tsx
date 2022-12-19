@@ -32,7 +32,7 @@ const FAQ = (props: Props) => {
         <div
           className={showInstall ? "flex flex-col space-y-2" : "hidden"}
         >
-          <p className="leading-7 w-full text-sky-100">
+          <p className="leading-7 w-full text-sky-700 dark:text-sky-100">
             {"The ETH Portal Network development effort is an open, multi-team effort. If you're interested in helping contribute towards the desgin and implementation, join the ongoing discussion happening on the #portal-network channel on ETH R&D discord server. There is also a weekly call, Tuesdays @ 3PM UTC, where we discuss the latest developments and open questions."}
           </p>
         </div>
