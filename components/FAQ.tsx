@@ -13,7 +13,7 @@ const FAQ = (props: Props) => {
     <section className="flex flex-col w-full justify-start items-center space-y-2">
       <div className="flex flex-col w-full space-y-4 bgpr p-4 rounded-md">
         <div className="flex items-center w-full justify-between">
-          <h4 className="flex leading-[24px] text-lg text-sky-900 dark:text-sky-300 font-bold">How can I contribute to Portal Network development?</h4>
+          <h4 className="flex leading-[24px] text-sm sm:text-base md:text-[18px] lg:text-lg text-sky-900 dark:text-sky-300 font-bold">How can I contribute to Portal Network development?</h4>
           <span className="" />
           <div className={`${"flex items-center"}`}>
             {!showInstall ? (
