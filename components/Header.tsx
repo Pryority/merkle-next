@@ -12,9 +12,6 @@ export default function Header() {
           <h1 className="">enchain</h1>
           <h1 className="tracking-[8px] text-base sm:text-lg md:text-xl lg:text-2xl">.eth</h1>
         </Link>
-        {/* <h1 className={"font-light text-sm text-end"}>
-          Interact with Ethereum from your Command Line
-        </h1> */}
       </div>
     </header>
   );
