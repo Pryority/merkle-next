@@ -1,5 +1,6 @@
 import { ArrowTopRightOnSquareIcon, ArrowUpIcon, ArrowUpOnSquareStackIcon, ArrowUpRightIcon, MinusCircleIcon, PlusCircleIcon } from "@heroicons/react/24/outline";
 import { motion } from "framer-motion";
+import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 import FAQ from "../components/FAQ";
@@ -20,6 +21,11 @@ export default function Home() {
   };
   return (
     <div className="flex flex-col w-full snap-y snap-mandatory h-screen overflow-scroll overflow-x-hidden">
+      <Head>
+        <title>enchain.eth</title>
+        <meta name="description" content="An Ethereum Portal Network educational website" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
       <Header/>
       <div className="snap-start w-screen min-h-screen flex items-center justify-center">
         <motion.section id="intro"
