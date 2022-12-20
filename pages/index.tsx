@@ -22,18 +22,19 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full snap-y snap-mandatory h-screen overflow-scroll overflow-x-hidden p-8">
       <Head>
-        <title>MerleTree.js</title>
+        <title>MerkleTree.js</title>
         <meta name="description" content="A renovated " />
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main>
-        <h1 className="text-4xl pb-8">MerkleTree.js</h1>
-        <div className="flex flex-col w-full bg-stone-300 p-4">
+      <h1 className="text-4xl pb-8">MerkleTree.js</h1>
+      
+      <main className="flex flex-col space-y-4">
+        <div className="flex flex-col w-full bg-red-300 dark:bg-red-900 p-4">
           <details open>
             <summary>Input</summary>
-            <form id="form" className="flex flex-col w-full space-y-4">
-              <div className="flex flex-col">
+            <form id="form" className="flex flex-col w-full space-y-4 pt-8">
+              <div className="flex flex-col space-y-8">
                 <label className="font-medium text-2xl">Leaves <span className="font-light text-xs">(enter input json array or newline separated)</span></label>
                 <textarea id="input" rows={10} className="flex flex-col w-full border border-stone-400 focus:outline-stone-500 rounded p-2">
                   {`[
@@ -94,33 +95,53 @@ export default function Home() {
                 <input type="text" id="fillDefaultHashValue" />
               </div>
               <div className="flex flex-col w-full items-center pt-6">
-                <button type="submit" className="flex items-center space-x-2 text-lg bg-zinc-100 dark:bg-zinc-900 hover:bg-slate-100 dark:hover:bg-zinc-700 rounded-lg transition-all ease-in-out duration-150 dark:hover:border-zinc-300 px-6 py-2 uppercase text-start">Compute</button>
+                <button type="submit" className="flex items-center text-lg bg-zinc-100 hover:bg-lime-400 text-stone-700 hover:text-lime-900 rounded-lg transition-all ease-in-out duration-150 dark:hover:border-zinc-300 px-6 py-2 uppercase text-start">
+                  Compute
+                </button>
               </div>
             </form>
           </details>
         </div>
         {/* -------------------------------------------------------- */}
-        <div>
+        <div className="flex flex-col w-full bg-orange-300 dark:bg-orange-900 p-4">
           <details open>
             <summary>Verify</summary>
-            <form id="verifyForm">
-              <label>Proof</label>
-              <div>
-                <textarea id="verifyProof" rows={3}></textarea>
+            <form id="verifyForm" className="flex flex-col w-full space-y-4 pt-8">
+              <div className="flex flex-col w-full space-y-2">
+                <label>Proof</label>
+                <textarea 
+                  id="verifyProof" 
+                  rows={3}
+                  className={`${"border flex w-full rounded p-2 border-stone-400 focus:outline-stone-500 "}`}
+                />
               </div>
-              <label>Leaf</label>
-              <div>
-                <input type="text" id="verifyLeaf" />
+
+              <div className="flex flex-col w-full space-y-2">
+                <label>Leaf</label>
+                <input 
+                  type="text" 
+                  id="verifyLeaf" 
+                  className={`${"border flex w-full rounded p-2 border-stone-400 focus:outline-stone-500 "}`}
+                />
+
               </div>
-              <label>Root</label>
-              <div>
-                <input type="text" id="verifyRoot" />
+              <div className="flex flex-col w-full space-y-2">
+                <label>Root</label>
+                <input 
+                  type="text" 
+                  id="verifyRoot" 
+                  className={`${"border flex w-full rounded p-2 border-stone-400 focus:outline-stone-500 "}`}
+                />
               </div>
-              <div>
-                <button type="submit">Verify</button>
+              
+              <div className="flex flex-col w-full items-center pt-6">
+                <button type="submit" className="flex items-center text-lg bg-zinc-100 hover:bg-lime-400 text-stone-700 hover:text-lime-900 rounded-lg transition-all ease-in-out duration-150 dark:hover:border-zinc-300 px-6 py-2 uppercase text-start">
+                  Verify
+                </button>
               </div>
-              <label>Verified</label>
-              <div>
+
+              <div className="flex flex-col w-full items-center space-y-2">
+                <label>Verified</label>
                 <pre id="verified"></pre>
               </div>
             </form>
