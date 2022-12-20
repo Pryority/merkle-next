@@ -426,7 +426,7 @@ export default function Home() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: .5 }}
           className="p-4 flex space-x-2 w-full items-center justify-center">
-          <Link href={"#intro"} className="flex items-center space-x-2 text-lg bg-zinc-100 hover:bg-slate-100 rounded-lg hover:shadow-sm transition-all ease-in-out duration-150 hover:border px-6 py-2 uppercase text-start">
+          <Link href={"#intro"} className="flex items-center space-x-2 text-lg bg-zinc-100 dark:bg-zinc-900 hover:bg-slate-100 dark:hover:bg-zinc-700 rounded-lg hover:shadow-sm transition-all ease-in-out duration-150 hover:border dark:hover:border-zinc-300 px-6 py-2 uppercase text-start">
             <p>Go to Top of Page</p>
             <ArrowUpIcon className="h-4 w-4"/>
           </Link>
