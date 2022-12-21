@@ -19,6 +19,11 @@ export default function Home() {
   const toggleFAQ4 = () => {
     setShowFAQ4(!showFAQ4);
   };
+  const [proof, setProof] = useState("");
+  const [verifyForm, setVerifyForm] = useState({
+    proof: "", leaf: "", root: ""
+  });
+  const [tree, setTree] = useState();
   return (
     <div className="flex flex-col w-full snap-y snap-mandatory h-screen overflow-scroll overflow-x-hidden p-8">
       <Head>
@@ -141,7 +146,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col w-full items-center space-y-2">
-                <label className="text-zinc-200">Verified:</label>
+                <label className="text-zinc-900 dark:text-zinc-200">Verified:</label>
                 <pre id="verified"></pre>
               </div>
             </form>
@@ -150,15 +155,15 @@ export default function Home() {
         <div className="flex flex-col w-full bg-yellow-300 dark:bg-yellow-900 p-4">
           <details open>
             <summary>Proof</summary>
-            <form id="proofForm">
+            <form id="proofForm" className="flex flex-col w-full space-y-4 pt-8">
               <div className="flex items-center space-x-2 w-full">
                 <label>Leaf</label>
                 <div>
                   <select id="leaveSelect"></select>
                 </div>
               </div>
-              <div className="flex flex-col w-full items-center space-y-2">
-                <label className="text-zinc-200">Proof</label>
+              <div>
+                <label className="text-zinc-900 dark:text-zinc-200">Proof</label>
                 <pre id="proof"></pre>
               </div>
             </form>
@@ -167,7 +172,7 @@ export default function Home() {
         <div className="flex flex-col w-full bg-green-300 dark:bg-green-900 p-4">
           <details open>
             <summary>Output</summary>
-            <div id="output" className="flex flex-col space-y-4">
+            <div id="output" className="flex flex-col w-full space-y-4 pt-8">
               <div>
                 <label>Root</label>
                 <pre id="root"></pre>
