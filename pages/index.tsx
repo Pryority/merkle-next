@@ -59,28 +59,28 @@ export default function Home() {
               </div>
               <div className="flex flex-col w-full items-center space-y-2">
                 <label className="font-medium uppercase tracking-tighter text-lg">Options</label>
-                <div className="flex items-center justify-center space-x-8 w-full">
-                  <div className="flex items-center space-x-1">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 items-center justify-center w-2/3 sm:w-5/6 lg:w-full">
+                  <div className="flex items-center justify-start lg:justify-center w-full space-x-1">
                     <input type="checkbox" name="option" value="hashLeaves" id="hashLeaves"/>
                     <label htmlFor="hashLeaves">hashLeaves</label>
                   </div>
-                  <div className="flex items-center space-x-1">
+                  <div className="flex items-center justify-start lg:justify-center w-full space-x-1">
                     <input type="checkbox" name="option" value="sortLeaves" id="sortLeaves"/>
                     <label htmlFor="sortLeaves">sortLeaves</label>
                   </div>
-                  <div className="flex items-center space-x-1">
+                  <div className="flex items-center justify-start lg:justify-center w-full space-x-1">
                     <input type="checkbox" name="option" value="sortPairs" id="sortPairs"/>
                     <label htmlFor="sortPairs">sortPairs</label>
                   </div>
-                  <div className="flex items-center space-x-1">
+                  <div className="flex items-center justify-start lg:justify-center w-full space-x-1">
                     <input type="checkbox" name="option" value="duplicateOdd" id="duplicateOdd"/>
                     <label htmlFor="duplicateOdd">duplicateOdd</label>
                   </div>
-                  <div className="flex items-center space-x-1">
+                  <div className="flex items-center justify-start lg:justify-center w-full space-x-1">
                     <input type="checkbox" name="option" value="isBitcoinTree" id="isBitcoinTree"/>
                     <label htmlFor="isBitcoinTree">isBitcoinTree</label>
                   </div>
-                  <div className="flex items-center space-x-1">
+                  <div className="flex items-center justify-start lg:justify-center w-full space-x-1">
                     <input type="checkbox" name="option" value="fillDefaultHash" id="fillDefaultHash"/>
                     <label htmlFor="fillDefaultHash">fillDefaultHash</label>
                   </div>
